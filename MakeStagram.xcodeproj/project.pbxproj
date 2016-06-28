@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		454977741D1E597900982C99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 454977731D1E597900982C99 /* GoogleService-Info.plist */; };
+		457E27DE1D1E5B7400DE94E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27DD1D1E5B7400DE94E9 /* Constants.swift */; };
+		457E27E21D1E66F500DE94E9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E11D1E66F500DE94E9 /* Post.swift */; };
+		457E27E41D1ED69C00DE94E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E31D1ED69C00DE94E9 /* DataService.swift */; };
+		457E27E71D1EE08400DE94E9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E61D1EE08400DE94E9 /* PostTableViewCell.swift */; };
+		457E27E91D20D77300DE94E9 /* BryceFirebaseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E81D20D77300DE94E9 /* BryceFirebaseCode.swift */; };
 		458A760D1D1CCEAE00CE8B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A760C1D1CCEAE00CE8B9E /* AppDelegate.swift */; };
-		458A760F1D1CCEAE00CE8B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A760E1D1CCEAE00CE8B9E /* ViewController.swift */; };
 		458A76121D1CCEAE00CE8B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458A76101D1CCEAE00CE8B9E /* Main.storyboard */; };
 		458A76141D1CCEAE00CE8B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458A76131D1CCEAE00CE8B9E /* Assets.xcassets */; };
 		458A76171D1CCEAE00CE8B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458A76151D1CCEAE00CE8B9E /* LaunchScreen.storyboard */; };
+		458A76231D1D04B200CE8B9E /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76211D1D02A100CE8B9E /* TimelineViewController.swift */; };
+		458A76251D1D065400CE8B9E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76241D1D065400CE8B9E /* PhotoViewController.swift */; };
+		458A76271D1D066300CE8B9E /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76261D1D066300CE8B9E /* FriendSearchViewController.swift */; };
+		458A762A1D1D218A00CE8B9E /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76291D1D218A00CE8B9E /* PhotoTakingHelper.swift */; };
+		CA23C1E531030FC763AB61D5 /* Pods_MakeStagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CBBF5887CD5046B05058B6 /* Pods_MakeStagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30CBBF5887CD5046B05058B6 /* Pods_MakeStagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeStagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4CA18CC59F53EF3EB1672C /* Pods-MakeStagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeStagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram.release.xcconfig"; sourceTree = "<group>"; };
+		454977731D1E597900982C99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		457E27DD1D1E5B7400DE94E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		457E27E11D1E66F500DE94E9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		457E27E31D1ED69C00DE94E9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		457E27E61D1EE08400DE94E9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		457E27E81D20D77300DE94E9 /* BryceFirebaseCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BryceFirebaseCode.swift; sourceTree = "<group>"; };
 		458A76091D1CCEAE00CE8B9E /* MakeStagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeStagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		458A760C1D1CCEAE00CE8B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		458A760E1D1CCEAE00CE8B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		458A76111D1CCEAE00CE8B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		458A76131D1CCEAE00CE8B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		458A76161D1CCEAE00CE8B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		458A76181D1CCEAE00CE8B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458A76211D1D02A100CE8B9E /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = ../TimelineViewController.swift; sourceTree = "<group>"; };
+		458A76241D1D065400CE8B9E /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		458A76261D1D066300CE8B9E /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
+		458A76291D1D218A00CE8B9E /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		6B6692780C12E2D9636328D0 /* Pods-MakeStagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeStagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA23C1E531030FC763AB61D5 /* Pods_MakeStagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457E27E51D1EE04600DE94E9 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				457E27E61D1EE08400DE94E9 /* PostTableViewCell.swift */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
 		458A76001D1CCEAE00CE8B9E = {
 			isa = PBXGroup;
 			children = (
 				458A760B1D1CCEAE00CE8B9E /* MakeStagram */,
 				458A760A1D1CCEAE00CE8B9E /* Products */,
+				F703514380B850E5B729E629 /* Pods */,
+				974B136D5DE2C891B992C3A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +87,72 @@
 		458A760B1D1CCEAE00CE8B9E /* MakeStagram */ = {
 			isa = PBXGroup;
 			children = (
+				457E27DD1D1E5B7400DE94E9 /* Constants.swift */,
+				457E27E31D1ED69C00DE94E9 /* DataService.swift */,
+				458A76281D1D212A00CE8B9E /* PhotoTaking */,
+				458A761E1D1CCEDB00CE8B9E /* Model */,
+				458A761F1D1CCEE900CE8B9E /* View */,
+				458A76201D1CCEF100CE8B9E /* Controller */,
 				458A760C1D1CCEAE00CE8B9E /* AppDelegate.swift */,
-				458A760E1D1CCEAE00CE8B9E /* ViewController.swift */,
 				458A76101D1CCEAE00CE8B9E /* Main.storyboard */,
 				458A76131D1CCEAE00CE8B9E /* Assets.xcassets */,
 				458A76151D1CCEAE00CE8B9E /* LaunchScreen.storyboard */,
 				458A76181D1CCEAE00CE8B9E /* Info.plist */,
+				454977731D1E597900982C99 /* GoogleService-Info.plist */,
+				457E27E81D20D77300DE94E9 /* BryceFirebaseCode.swift */,
 			);
 			path = MakeStagram;
+			sourceTree = "<group>";
+		};
+		458A761E1D1CCEDB00CE8B9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				457E27E11D1E66F500DE94E9 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		458A761F1D1CCEE900CE8B9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				457E27E51D1EE04600DE94E9 /* Timeline */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		458A76201D1CCEF100CE8B9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				458A76211D1D02A100CE8B9E /* TimelineViewController.swift */,
+				458A76241D1D065400CE8B9E /* PhotoViewController.swift */,
+				458A76261D1D066300CE8B9E /* FriendSearchViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		458A76281D1D212A00CE8B9E /* PhotoTaking */ = {
+			isa = PBXGroup;
+			children = (
+				458A76291D1D218A00CE8B9E /* PhotoTakingHelper.swift */,
+			);
+			name = PhotoTaking;
+			sourceTree = "<group>";
+		};
+		974B136D5DE2C891B992C3A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30CBBF5887CD5046B05058B6 /* Pods_MakeStagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F703514380B850E5B729E629 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6692780C12E2D9636328D0 /* Pods-MakeStagram.debug.xcconfig */,
+				3C4CA18CC59F53EF3EB1672C /* Pods-MakeStagram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 458A761B1D1CCEAE00CE8B9E /* Build configuration list for PBXNativeTarget "MakeStagram" */;
 			buildPhases = (
+				BC1A4AAEF27270469BCE7102 /* 📦 Check Pods Manifest.lock */,
 				458A76051D1CCEAE00CE8B9E /* Sources */,
 				458A76061D1CCEAE00CE8B9E /* Frameworks */,
 				458A76071D1CCEAE00CE8B9E /* Resources */,
+				F64EA50D7A1194DF85E56387 /* 📦 Embed Pods Frameworks */,
+				C6AE2D604A7172128DF82546 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				458A76171D1CCEAE00CE8B9E /* LaunchScreen.storyboard in Resources */,
+				454977741D1E597900982C99 /* GoogleService-Info.plist in Resources */,
 				458A76141D1CCEAE00CE8B9E /* Assets.xcassets in Resources */,
 				458A76121D1CCEAE00CE8B9E /* Main.storyboard in Resources */,
 			);
@@ -131,13 +226,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC1A4AAEF27270469BCE7102 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AE2D604A7172128DF82546 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64EA50D7A1194DF85E56387 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		458A76051D1CCEAE00CE8B9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				458A760F1D1CCEAE00CE8B9E /* ViewController.swift in Sources */,
+				458A76271D1D066300CE8B9E /* FriendSearchViewController.swift in Sources */,
+				457E27E91D20D77300DE94E9 /* BryceFirebaseCode.swift in Sources */,
+				458A762A1D1D218A00CE8B9E /* PhotoTakingHelper.swift in Sources */,
 				458A760D1D1CCEAE00CE8B9E /* AppDelegate.swift in Sources */,
+				457E27DE1D1E5B7400DE94E9 /* Constants.swift in Sources */,
+				458A76231D1D04B200CE8B9E /* TimelineViewController.swift in Sources */,
+				457E27E21D1E66F500DE94E9 /* Post.swift in Sources */,
+				458A76251D1D065400CE8B9E /* PhotoViewController.swift in Sources */,
+				457E27E41D1ED69C00DE94E9 /* DataService.swift in Sources */,
+				457E27E71D1EE08400DE94E9 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +401,7 @@
 		};
 		458A761C1D1CCEAE00CE8B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6692780C12E2D9636328D0 /* Pods-MakeStagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MakeStagram/Info.plist;
@@ -261,6 +413,7 @@
 		};
 		458A761D1D1CCEAE00CE8B9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4CA18CC59F53EF3EB1672C /* Pods-MakeStagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MakeStagram/Info.plist;
@@ -289,6 +442,7 @@
 				458A761D1D1CCEAE00CE8B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
