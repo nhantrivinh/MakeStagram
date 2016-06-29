@@ -29,12 +29,16 @@ class TimelineViewController: UIViewController {
     //STEP 3
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
+        print("viewDidAppear")
         
         DataService.instance.REF_POSTS.observeEventType(.Value, withBlock: { (snapshot) in
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                
                 for snap in snapshots {
+                    
                     if snap.value != nil {
+                        print(snap.value)
                         //Talk to firebase
                         let postDict = snap.value as! Dictionary<String, AnyObject>
                         let key = snap.key
@@ -44,29 +48,11 @@ class TimelineViewController: UIViewController {
                 }
             }
             self.tableView.reloadData()
-        }) { (err) in
-            print(err)
-        }
-    }
-    
-    //STEP 1
-    func postToFireBase(imageURL: String?) {
-        
-        var post: Dictionary<String, AnyObject> = [
-            "likes": 0,
-            "user": "test_user"
-        ]
-        
-        if imageURL != nil {
-            post["imageURL"] = imageURL!
+            }) { (err) in
+                print(err)
         }
         
-        let firebasePost = DataService.instance.REF_POSTS.childByAutoId()
-        firebasePost.setValue(post)
-        
-        tableView.reloadData()
     }
-    
     
 }
 
@@ -88,6 +74,7 @@ extension TimelineViewController: UITabBarControllerDelegate {
         photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?) in
             print("callback received")
             let post = Post(image: image)
+            
             post.uploadPost()
         })
     }
@@ -118,4 +105,6 @@ extension TimelineViewController: UITableViewDataSource {
             return PostTableViewCell()
         }
     }
+    
+    
 }

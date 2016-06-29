@@ -18,8 +18,6 @@ let REF_STORAGE_IMAGES = REF_STORAGE.child("images")
 
 class DataService {
     
-    
-    
     static let instance = DataService()
     
     private var _REF_BASE = URL_BASE
@@ -57,12 +55,6 @@ class DataService {
             return usernames
         }
     }
-    
-   
-    
-   
-    
-    
 
     
 }

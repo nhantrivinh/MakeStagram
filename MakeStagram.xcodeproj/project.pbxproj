@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		454977741D1E597900982C99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 454977731D1E597900982C99 /* GoogleService-Info.plist */; };
 		457E27DE1D1E5B7400DE94E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27DD1D1E5B7400DE94E9 /* Constants.swift */; };
 		457E27E21D1E66F500DE94E9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E11D1E66F500DE94E9 /* Post.swift */; };
 		457E27E41D1ED69C00DE94E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E27E31D1ED69C00DE94E9 /* DataService.swift */; };
@@ -21,13 +20,13 @@
 		458A76251D1D065400CE8B9E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76241D1D065400CE8B9E /* PhotoViewController.swift */; };
 		458A76271D1D066300CE8B9E /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76261D1D066300CE8B9E /* FriendSearchViewController.swift */; };
 		458A762A1D1D218A00CE8B9E /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A76291D1D218A00CE8B9E /* PhotoTakingHelper.swift */; };
+		45DBAA711D2393BA0094F760 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45DBAA701D2393B90094F760 /* GoogleService-Info.plist */; };
 		CA23C1E531030FC763AB61D5 /* Pods_MakeStagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CBBF5887CD5046B05058B6 /* Pods_MakeStagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30CBBF5887CD5046B05058B6 /* Pods_MakeStagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeStagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4CA18CC59F53EF3EB1672C /* Pods-MakeStagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeStagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram.release.xcconfig"; sourceTree = "<group>"; };
-		454977731D1E597900982C99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		457E27DD1D1E5B7400DE94E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		457E27E11D1E66F500DE94E9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		457E27E31D1ED69C00DE94E9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		458A76241D1D065400CE8B9E /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		458A76261D1D066300CE8B9E /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
 		458A76291D1D218A00CE8B9E /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		45DBAA701D2393B90094F760 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6B6692780C12E2D9636328D0 /* Pods-MakeStagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeStagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakeStagram/Pods-MakeStagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 				458A76131D1CCEAE00CE8B9E /* Assets.xcassets */,
 				458A76151D1CCEAE00CE8B9E /* LaunchScreen.storyboard */,
 				458A76181D1CCEAE00CE8B9E /* Info.plist */,
-				454977731D1E597900982C99 /* GoogleService-Info.plist */,
+				45DBAA701D2393B90094F760 /* GoogleService-Info.plist */,
 				457E27E81D20D77300DE94E9 /* BryceFirebaseCode.swift */,
 			);
 			path = MakeStagram;
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				458A76171D1CCEAE00CE8B9E /* LaunchScreen.storyboard in Resources */,
-				454977741D1E597900982C99 /* GoogleService-Info.plist in Resources */,
+				45DBAA711D2393BA0094F760 /* GoogleService-Info.plist in Resources */,
 				458A76141D1CCEAE00CE8B9E /* Assets.xcassets in Resources */,
 				458A76121D1CCEAE00CE8B9E /* Main.storyboard in Resources */,
 			);

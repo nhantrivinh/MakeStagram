@@ -18,7 +18,7 @@ class Post {
     private var _image: UIImage?
     private var _likes: Int!
     private var _postKey: String!
-//    private var _postRef: String!
+    private var _postRef: FIRDatabaseReference!
     
     var image: UIImage? {
         return _image
@@ -40,9 +40,9 @@ class Post {
         return _postKey
     }
     
-//    var postRef: String {
-//        return _postRef
-//    }
+    var postRef: FIRDatabaseReference {
+        return _postRef
+    }
 
     //initialize post
     //Good
@@ -58,12 +58,15 @@ class Post {
         
         if let likes = dictionary["likes"] as? Int {
             self._likes = likes
+            print("likes", likes)
         }
         
-        if let imgUrl = dictionary["imageUrl"] as? String {
+        if let imgUrl = dictionary["imageURL"] as? String {
             self._imgUrl = imgUrl
+            print("imgUrl", imgUrl)
         }
         
+        self._postRef = DataService.instance.REF_POSTS.child(self._postKey)
     }
     
     init(image: UIImage?) {
@@ -79,7 +82,7 @@ class Post {
         }
         
         //Save the new total likes to firebase
-        DataService.instance.REF_POSTS.child("likes").setValue(_likes)
+        _postRef.child("likes").setValue(likes)
         
     }
     
@@ -92,10 +95,10 @@ class Post {
             let imageName = "imageName\(NSDate.timeIntervalSinceReferenceDate()).jpg"
             let imageRef = REF_STORAGE_POSTS.child("images/\(imageName)")
             
-            photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({
-                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
-                print("background task begins")
-            })
+//            photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({
+//                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
+//                print("background task begins")
+//            })
             
             
             let uploadTask = imageRef.putData(imageData, metadata: nil) { metadata, error in
@@ -109,16 +112,35 @@ class Post {
                         print("Nil download URL")
                         return
                     }
-                    print("download url:", downloadURL)
-                    print("image uploaded")
-                    let imgUrl = downloadURL.absoluteString
-                    
+
+                    self.postToFireBase(imageName)
+
                 }
                 
-                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
-                print("background task ended")
             }
         }
+    }
+    
+    //STEP 1
+    func postToFireBase(imageURL: String?) {
+        print("IMAGE URL", imageURL)
+        var post: Dictionary<String, AnyObject> = [
+            "likes": 0,
+            "user": "test_user"
+        ]
+        
+        if imageURL != nil {
+            post["imageURL"] = imageURL!
+        }
+        
+//        print("POST!", post)
+        
+        let firebasePost = DataService.instance.REF_POSTS.childByAutoId()
+//        print(firebasePost)
+
+        firebasePost.updateChildValues(post)
+        
+        
     }
     
 }
