@@ -52,7 +52,6 @@ class Post {
     }
     
     //download and parsing data
-    
     init(postKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._postKey = postKey
         
@@ -126,7 +125,8 @@ class Post {
         print("IMAGE URL", imageURL)
         var post: Dictionary<String, AnyObject> = [
             "likes": 0,
-            "user": "test_user"
+            "user": "test_user",
+            "timestamp": FIRServerValue.timestamp()
         ]
         
         if imageURL != nil {

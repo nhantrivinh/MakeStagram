@@ -9,10 +9,12 @@
 import UIKit
 import Firebase
 
-
 class TimelineViewController: UIViewController {
     
     var posts: [Post] = []
+    var ref: FIRDatabaseReference!
+    var handle: UInt!
+    
     static var imageCache = NSCache()
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,7 +24,6 @@ class TimelineViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.rowHeight = 470.0
         self.tabBarController?.delegate = self
-        
     }
     
     //Downloading from FIR
@@ -36,9 +37,7 @@ class TimelineViewController: UIViewController {
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 
                 for snap in snapshots {
-                    
                     if snap.value != nil {
-                        print(snap.value)
                         //Talk to firebase
                         let postDict = snap.value as! Dictionary<String, AnyObject>
                         let key = snap.key
@@ -47,6 +46,7 @@ class TimelineViewController: UIViewController {
                     }
                 }
             }
+            self.posts = self.posts.reverse()
             self.tableView.reloadData()
             }) { (err) in
                 print(err)
@@ -57,6 +57,8 @@ class TimelineViewController: UIViewController {
 }
 
 // MARK: Tab Bar Delegate
+
+
 
 extension TimelineViewController: UITabBarControllerDelegate {
     
@@ -72,7 +74,6 @@ extension TimelineViewController: UITabBarControllerDelegate {
     func takePhoto() {
         // instantiate photo taking class, provide callback for when photo is selected
         photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?) in
-            print("callback received")
             let post = Post(image: image)
             
             post.uploadPost()
@@ -92,6 +93,7 @@ extension TimelineViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostTableViewCell {
+            cell.downloadTask?.cancel()
             var img: UIImage?
             
             if let url = post.imgUrl {
@@ -99,11 +101,26 @@ extension TimelineViewController: UITableViewDataSource {
             }
             
             cell.configureCell(img, post: post)
-            
             return cell
         } else {
             return PostTableViewCell()
         }
+//        tableView.deq
+//        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell", forIndexPath: indexPath) as? PostTableViewCell {
+//            cell.downloadTask?.cancel()
+//            var img: UIImage?
+//            
+//            if let url = post.imgUrl {
+//                img = TimelineViewController.imageCache.objectForKey(url) as? UIImage
+//            }
+//            
+//            cell.configureCell(img, post: post)
+//            return cell
+//        } else {
+//            return PostTableViewCell()
+//        }
+        
+
     }
     
     

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ConvenienceKit-ConvenienceKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ConvenienceKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MakeStagram.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A990515A4091E9512EEC1FD21A4A0B02</key>
+		<key>802D3B1C197FEA0861F5931F7ED43355</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B35B5F539129D13DCD83992DB327425</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA0ED018954B2E035A694BF72506145C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,5 +10,6 @@ target 'MakeStagram' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'ConvenienceKit'
 
 end
